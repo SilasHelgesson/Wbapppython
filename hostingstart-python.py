@@ -7,7 +7,7 @@ import platform
 def application(environ, start_response):
 
     start_response(b'200 OK', [(b'Content-Type', b'text/html')])
-    with("hello world")
+    
     with open ("hostingstart-python.html", "r") as hostingstart_file:
 
         hosting = hostingstart_file.read()
