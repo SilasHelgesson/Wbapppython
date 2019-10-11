@@ -10,8 +10,8 @@ def application(environ, start_response):
     
     with open ("hostingstart-python.html", "r") as hostingstart_file:
     
-       # hosting = hostingstart_file.read()
-       hosting = "hello world"
+        hosting = hostingstart_file.read()
+       
 
         yield hosting.encode('utf8').replace(b'PYTHON_VERSION', platform.python_version().encode('utf8'))
 
