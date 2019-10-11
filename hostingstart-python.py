@@ -14,6 +14,6 @@ def application(environ, start_response):
             #hosting = hostingstart_file.read()
     
         
-        yield hosting.encode('utf8').replace(b'PYTHON_VERSION', platform.python_version().encode('utf8'))
+        #yield hosting.encode('utf8').replace(b'PYTHON_VERSION', platform.python_version().encode('utf8'))
 
 
